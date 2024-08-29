@@ -1,6 +1,5 @@
 import React, {
   useCallback,
-  useEffect,
   useState,
 } from "react";
 import CallBackButton from "./CallBackButton";
@@ -12,9 +11,9 @@ const UseCallBackCount = () => {
     setCount((prevcount) => prevcount + 1);
   }, []);
 
-  useEffect(() => {
-    console.log("useEffect calling .... ");
-  }, [increment]);
+  // useEffect(() => {
+  //   console.log("useEffect calling .... ");
+  // }, [increment]);
 
   console.log("UseCallBackCount comp render ...");
 
