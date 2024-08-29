@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra_loop</title>
+</head>
+<body>
+    <script>
+        
+        //For...In
+
+        // OBJECT
+        let animal = {
+            name : "Zebra" , 
+            legs : 4
+        }; // semicolon is after end braket
+
+        for(let key in animal){
+            console.log(key , animal[key]);
+        }
+
+
+
+
+        //ARRAY
+         let name = ["adi" , "xyz" , "abc" , "qpr"];
+         
+         for(let index in name){
+            console.log(index , name[index]);
+         }
+
+
+         //FOR...OF
+
+        for(element of name){     // fna is any variable 
+            console.log(element);
+        }
+
+        let friends = ["Aditya", "XYZ", "ABC"];
+
+      friends.forEach(function f(Element) {
+
+        console.log("Hello dost" + Element)
+      });
+
+    </script>
+    
+</body>
+</html>

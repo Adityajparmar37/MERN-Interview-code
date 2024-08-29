@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #btn {
+        padding: 10px 14px;
+        color: white;
+        background-color: red;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="para">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique non
+      molestias dolorem? Ipsum quisquam quos maxime temporibus quaerat maiores
+      quae beatae atque, labore veritatis exercitationem iusto ipsam,
+      consectetur voluptatibus omnis repellendus? Reiciendis saepe iure
+      perferendis! Temporibus voluptatem inventore quam at repellendus veniam
+      vel commodi illum odit mollitia ipsa pariatur eum corrupti vitae
+      dignissimos optio placeat quos non consequatur, reprehenderit voluptas.
+      Nostrum explicabo aspernatur optio culpa ut omnis? Minus illum aspernatur
+      odio natus dicta autem, repellat ratione voluptas nihil. Quaerat eos dolor
+      ipsa. Aspernatur quod doloremque quas labore nemo dolorum quasi amet
+      laboriosam quaerat blanditiis exercitationem repellendus sed, aliquid
+      eveniet impedit ipsa obcaecati ipsam itaque distinctio libero nesciunt
+      magni sapiente quidem autem. Consequuntur eum voluptates incidunt quis
+      minima quibusdam laudantium natus tempora, aliquam voluptatum sequi
+      architecto rem inventore similique recusandae totam dolore odit qui quidem
+      dolorum, sint accusantium temporibus. Natus aspernatur dolor in error!
+      Cupiditate quidem nobis vitae. Accusantium eos quos libero modi! Nemo,
+      corporis itaque molestias natus, perspiciatis maxime fugiat labore facere
+      at recusandae vel voluptatum harum nisi velit eligendi qui excepturi?
+      Nihil facilis dolor officiis necessitatibus cumque architecto temporibus
+      est exercitationem excepturi, iste consequatur at quod maxime dicta, amet
+      sunt sed blanditiis sit distinctio vel. Harum, exercitationem distinctio
+      voluptates ea quia adipisci iusto ratione aperiam tempora sit illum
+      pariatur magni eaque tenetur saepe debitis ipsa placeat earum, asperiores,
+      totam delectus nulla incidunt? Rem pariatur saepe facere error velit
+      architecto consequatur natus aliquid similique quisquam quia quaerat
+      libero, illo corrupti odit vero nostrum eligendi molestias, ex obcaecati
+      officiis nulla praesentium facilis repellat. Minus praesentium repellat
+      assumenda ipsum laboriosam exercitationem nesciunt delectus iusto ea
+      repellendus minima voluptatibus provident nisi fuga harum non sint debitis
+      qui vitae doloremque perspiciatis, adipisci veniam. Odio totam eveniet
+      impedit repellat, nesciunt labore et est ullam amet, cupiditate, minima in
+      eaque. Eligendi quidem repellat commodi libero officiis hic recusandae at.
+      Animi autem minima a libero vitae neque labore fuga et ab, deleniti
+      accusamus, amet, quisquam quos praesentium aperiam! Tenetur ut illo,
+      cumque hic consequuntur, nulla consequatur esse odit aspernatur delectus
+      officia libero. Repellendus minima, obcaecati vitae culpa itaque repellat
+      iusto, quis quod nobis placeat dicta ratione molestias necessitatibus.
+      Aliquam atque, laboriosam molestiae architecto ut aspernatur esse id.
+    </p>
+
+    <!-- <input type = "button" id = "btn" value="Hide/Show" onclick="hide()"> -->
+
+    <input type="button" id="btn" value="Hide/Show" />
+
+    <script>
+      let btn = document.getElementById("btn");
+      btn.addEventListener('click' , function hide(){
+        // let btn = document.getElementById("btn");
+        let para = document.getElementById("para");
+
+        if (para.style.display != "none") {
+          para.style.display = "none";
+          console.log("hide")
+        // alert("hide");
+        } else {
+          para.style.display = "block";
+          console.log("show");
+        }
+      });
+
+
+
+
+      // onclick is different and addEventLisner is different .
+      // onclick is use in html while click in addEventLisner is use in script
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+const { Worker } = require("worker_threads");
+
+const sharedBuffer = new SharedArrayBuffer(5);
+const buffer = new Uint8Array(sharedBuffer);
+buffer.fill(5);
+
+console.log("buffer before modify: ", buffer);
+
+const worker = new Worker(
+  "./WorkerForBufferArray.js",
+  {
+    workerData: { sharedBuffer },
+  }
+);
+
+worker.once("message", () => {
+  console.log("buffer after modify: ", buffer);
+});
