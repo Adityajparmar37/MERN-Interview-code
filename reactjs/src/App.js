@@ -1,18 +1,14 @@
 import "./App.css";
-import UseCallBackCount from "./components/UseCallBackCount";
+import { CreateAuthContext } from "./components/CreateAuthContext";
+import Home from "./Home";
 
 function App() {
   return (
-    <div className="App">
-      {/* <MemoNameComponent name={"Aditya"} />
-      <MemoMarksComponent 
-        marks={80}
-        subject={"MERN"}
-      /> */}
-      {/* <UseCallBackCount /> */}
-
-      <UseCallBackCount />
-    </div>
+    <CreateAuthContext>
+      <div className="App">
+        <Home/>
+      </div>
+    </CreateAuthContext>
   );
 }
 
